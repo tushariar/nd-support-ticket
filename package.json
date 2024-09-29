@@ -7,6 +7,7 @@
   },
   "scripts": {
     "build": "tsc",
+    "watch": "tsc -w",
     "start": "NODE_ENV=production node dist/app.js",
     "dev": "NODE_ENV=development nodemon dist/app.js",
     "prisma-migrate-dev": "NODE_ENV=development node lib/prisma/migrate.js",
