@@ -22,7 +22,7 @@ const ticketSchema = z.object({
   }),
 });
 
-const validatePeople = async (
+const validateTicket = async (
   req: Request,
   res: Response,
   next: NextFunction
@@ -76,4 +76,4 @@ const validatePeople = async (
   }
 };
 
-export default validatePeople;
+export default validateTicket;
