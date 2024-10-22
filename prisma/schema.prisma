@@ -9,6 +9,14 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mongodb"
   url      = env("DATABASE_URL")
+}
+
+model Ticket {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  userID    String
+  deviceID  String
+  queryText String
+  date      DateTime @default(now())
 }
