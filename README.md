@@ -1,12 +1,11 @@
-# NodeJS - TypeScript Boilerplate
+# NerdDevs Assessment 01 - Support Ticket
 
-This is a simple boilerplate for NodeJS projects using TypeScript.
+An API for creating support tickets.
 
-## Features
-- TypeScript Support
-- Prisma Support
-- Dynamic IP Address
-- ExpressJS Setup
+## Stack
+- TypeScript
+- ExpressJS
+- Prisma (+ MongoDB)
 
 ## Installation
 1. Clone the repository

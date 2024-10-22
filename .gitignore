@@ -2,5 +2,6 @@ dist
 node_modules
 .env.development
 .env.production
+.env
 /public/*
 /prisma/migrations
