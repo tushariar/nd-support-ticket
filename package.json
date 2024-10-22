@@ -9,9 +9,7 @@
     "build": "tsc",
     "watch": "tsc -w",
     "start": "NODE_ENV=production node dist/app.js",
-    "dev": "NODE_ENV=development nodemon dist/app.js",
-    "prisma-migrate-dev": "NODE_ENV=development node lib/prisma/migrate.js",
-    "prisma-migrate-prod": "NODE_ENV=production node lib/prisma/migrate.js"
+    "dev": "NODE_ENV=development nodemon dist/app.js"
   },
   "keywords": [],
   "author": "",
