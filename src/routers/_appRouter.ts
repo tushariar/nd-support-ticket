@@ -1,5 +1,5 @@
-import express, { NextFunction, Request, Response, Router } from "express";
-import _globals from "../config/_globals";
+import { NextFunction, Request, Response, Router } from "express";
+import supportRouter from "./supportRouter";
 
 const appRouter = Router();
 
@@ -10,7 +10,7 @@ appRouter.get("/", (req: Request, res: Response) => {
   return;
 });
 
-appRouter.use("/public", express.static(_globals.PUBLIC_DIR));
+appRouter.use("/support", supportRouter);
 
 // Catch 404 and forward to error handler
 appRouter.use((req: Request, res: Response) => {
