@@ -8,10 +8,13 @@ An API for creating support tickets.
 - Prisma (+ MongoDB)
 
 ## Installation
-0. Clone the repository
-1. Delete `node_modules` and `dist` folders if they exist
+1. Clone the repository
 2. Run `npm install` or `bun install`
-3. Run `npm run watch` to start watching for TypeScript changes
-4. Run `npm run build` to build the project (TypeScript -> JavaScript)
+3. Run `npx prisma generate` to generate the Prisma Client
+4. Run `npm run watch` to start watching for TypeScript changes
 5. Run `npm run dev` to start the server
-6. Run `npm run start` to start the server in production mode
+6. Run `npm run build` to build the project into the `dist` folder (TypeScript to JavaScript)
+7. Run `npm run start` to start the server in production mode
+
+## PORT
+- The server runs on port `2430` by default
